@@ -199,7 +199,7 @@ plt.plot(age_vals, qol4, label='Scenario 4')
 plt.xlabel('Age')
 plt.ylabel('QoL') 
 plt.ylim(0, 1.2)   
-plt.title('QoL')
+plt.title('QoL by Age for Each Scenario')
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
@@ -229,9 +229,9 @@ frac_scn[4]=0.15
 
 ######Set QALY_base reference values######
 qaly_base=500
-ave_QALY={}
 
 ######Calculate a weighted average of QALYs according to the scenario's propotion settings######
+ave_QALY={}
 for a in range(age_min, age_max): 
  ave_QALY[a]=0
  for s in range(1, 5):
