@@ -20,13 +20,12 @@ This code estimates the monetary value of a Quality-Adjusted Life Year (QALY) de
 These are loaded using `pandas.read_csv()` and set to appropriate data types and indices.
 ---
 
-#### 3. **Survival and Income Functions**
+#### 3. **SFunctions**
 Interpolation functions are created:
 - `S(t, a)`: Survival probability from age `a` to time `t`.
 - `yF(t)`, `cF(t)`: Interpolated income and consumption at time `t`.
 - `pop(t)`: Population at time `t`.
-- `phi(t, s)`: Policy-dependent adjustment coefficients.
-
+- `phi(t, s)`: elasticity of substitution at age `t` in scenario `s`.
 ---
 
 #### 4. **Health State Functions per Scenario**
