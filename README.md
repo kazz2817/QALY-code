@@ -71,21 +71,12 @@ This repository contains Python code for estimating the monetary value of a Qual
 
 ## Files
 - `QALY.py`: Main computational script.
-- `income.csv`, `consumption.csv`, `population.csv`, `phi.csv`, `XXX`: Required data files.
-
-## Usage
-Update the file paths as needed and run the script:
-```bash
-python main.py
-```
+- Required data files related to Income, Consumption, Survival rate, and elasticity.
 
 ## Output
 - Two figures: QoL by age and QALY by age for each scenario.
 - Printed cost reduction value (`CR`) based on weighted QALY differences.
 
-## License
-MIT License
-"""
 
 # Display the contents
 supplementary_df = pd.DataFrame([{
