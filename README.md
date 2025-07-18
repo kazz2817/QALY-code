@@ -41,6 +41,7 @@ Two formulations of VSL are calculated for each scenario:
 
 #### 6. **Monetary Value of a QALY**
 QALY is computed by taking the difference between `vsl_by_b` and `vsl_by_a`, normalized by the quality of life (QoL) at each age.
+
 ---
 
 #### 7. **Visualization**
