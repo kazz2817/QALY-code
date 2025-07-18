@@ -63,14 +63,14 @@ readme_content = """
 This repository contains Python code for estimating the monetary value of a Quality-Adjusted Life Year (QALY) based on the Value of a Statistical Life (VSL), under different age-specific health deterioration scenarios.
 
 ## Requirements
-- Python 3.x
+- Python 3.12.1
 - pandas
 - numpy
 - matplotlib
 - scipy
 
 ## Files
-- `main.py`: Main computational script.
+- `QALY.py`: Main computational script.
 - `income.csv`, `consumption.csv`, `population.csv`, `phi.csv`, `XXX`: Required data files.
 
 ## Usage
