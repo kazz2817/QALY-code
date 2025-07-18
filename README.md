@@ -55,14 +55,6 @@ Weighted average QALYs across scenarios are computed using scenario fractions. T
 
 ---
 
-"""
-
-# Create a basic README.md content
-readme_content = """
-# QALY Estimation Based on VSL
-
-This repository contains Python code for estimating the monetary value of a Quality-Adjusted Life Year (QALY) based on the Value of a Statistical Life (VSL), under different age-specific health deterioration scenarios.
-
 ## Requirements
 - Python 3.12.1
 - pandas
