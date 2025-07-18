@@ -70,14 +70,3 @@ Weighted average QALYs across scenarios are computed using scenario fractions. T
 - Two figures: QoL by age and QALY by age for each scenario.
 - Printed cost reduction value (`CR`) based on weighted QALY differences.
 
-
-# Display the contents
-supplementary_df = pd.DataFrame([{
-    "Section": "Supplementary Description",
-    "Content": supplementary_description.strip()
-}, {
-    "Section": "README.md",
-    "Content": readme_content.strip()
-}])
-
-import ace_tools as tools; tools.display_dataframe_to_user(name="Code Documentation Summary", dataframe=supplementary_df)
