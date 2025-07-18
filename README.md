@@ -20,7 +20,7 @@ This code estimates the monetary value of a Quality-Adjusted Life Year (QALY) de
 These are loaded using `pandas.read_csv()` and set to appropriate data types and indices.
 ---
 
-#### 3. **SFunctions**
+#### 3. **Functions**
 Interpolation functions are created:
 - `S(t, a)`: Survival probability from age `a` to time `t`.
 - `yF(t)`, `cF(t)`: Interpolated income and consumption at time `t`.
@@ -28,32 +28,29 @@ Interpolation functions are created:
 - `phi(t, s)`: elasticity of substitution at age `t` in scenario `s`.
 ---
 
-#### 4. **Health State Functions per Scenario**
-Four health scenarios (SCN1 to SCN4) are modeled using different age-specific quality-of-life deterioration functions.
+#### 4. **QoL scenatio setting**
+Four scenarios (SCN1 to SCN4) are modeled using different age-specific QoL.
 
 ---
 
-#### 5. **Net Present Value of VSL**
+#### 5. **VSL Caluculation**
 Two formulations of VSL are calculated for each scenario:
-- `vsl_by_a`: Standard expected lifetime utility starting at age `a`.
-- `vsl_by_b`: Utility gain from marginal life extension.
-
+- `vsl_by_a`: VSL at given age `a` for each scenario.
+- `vsl_by_b`: VSL for one year of life expectancy at given age `a` for each scenario.
 ---
 
 #### 6. **Monetary Value of a QALY**
 QALY is computed by taking the difference between `vsl_by_b` and `vsl_by_a`, normalized by the quality of life (QoL) at each age.
-
 ---
 
 #### 7. **Visualization**
 Two plots are generated:
 - QoL vs. Age for each scenario.
 - QALY vs. Age for each scenario.
-
 ---
 
 #### 8. **Population-weighted Average QALY and Cost Reduction**
-Weighted average QALYs across scenarios are computed using scenario fractions. The aggregate cost reduction (`CR`) is calculated relative to a base QALY level of 500.
+Weighted average QALYs across scenarios are computed using scenario fractions. The aggregate cost reduction (`CR`) is calculated relative to a base (reference) QALY level.
 
 ---
 
