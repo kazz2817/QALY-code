@@ -46,8 +46,8 @@ QALY is computed by taking the difference between `vsl_by_b` and `vsl_by_a`, nor
 
 #### 7. **Visualization**
 Two plots are generated:
-- QoL vs. Age for each scenario.
-- QALY vs. Age for each scenario.
+- QoL against Age for each scenario.
+- QALY against Age for each scenario.
 ---
 
 #### 8. **Population-weighted Average QALY and Cost Reduction**
