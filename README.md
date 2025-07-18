@@ -22,9 +22,9 @@ These are loaded using `pandas.read_csv()` and set to appropriate data types and
 
 #### 3. **Functions**
 Interpolation functions are created:
-- `S(t, a)`: Survival probability from age `a` to time `t`.
-- `yF(t)`, `cF(t)`: Interpolated income and consumption at time `t`.
-- `pop(t)`: Population at time `t`.
+- `S(t, a)`: Survival probability from age `a` and `t`.
+- `yF(t)`, `cF(t)`: Interpolated income and consumption at age `t`.
+- `pop(t)`: Population at age `t`.
 - `phi(t, s)`: elasticity of substitution at age `t` in scenario `s`.
 ---
 
