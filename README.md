@@ -12,7 +12,7 @@ This code estimates the monetary value of a Quality-Adjusted Life Year (QALY) de
 ---
 
 #### 2. **Data Loading**
-- `df_S`: Survival probability over age.
+- `df_S`: Survival rate over age.
 - `df_y`: Age-specific income (`yF`).
 - `df_c`: Age-specific consumption (`cF`).
 - `df_pop`: Age-specific population distribution.
